@@ -1,0 +1,100 @@
++ ld obj/kernel/kernel
++ mk obj/kernel/kernel.img
+***
+*** Now run 'make gdb'.
+***
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+07F8B4A0+07ECB4A0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Hard Disk...
+
+[LAB 2] check_ptbl_flags() succeeded!
+[LAB 2] check_wx() succeeded!
+[LAB 2] check_nx() succeeded!
+[LAB 2] check_4k_paging() succeeded!
+[LAB 2] check_free_list_order() succeeded!
+[LAB 2] check_memory_layout() succeeded!
+[LAB 2] check_buddy_consistency() succeeded!
+[LAB 2] check_vas() succeeded!
+I/O APIC with base=0xfec00000
+SMP: setting IMCR to switch from PIC mode to symmetric I/O mode
+[PID     0] New task with PID 1
+LOAD vaddr=0x800020 memsz=4062 offset=352 filesz=4062 flags=[r-x]
+LOAD vaddr=0x801000 memsz=716 offset=8192 filesz=716 flags=[r--]
+LOAD vaddr=0x802000 memsz=8 offset=12288 filesz=8 flags=[rw-]
+LOAD vaddr=0x200000 memsz=104 offset=12304 filesz=104 flags=[rw-]
+[PID     1] New task with PID 2
+[PID     1] New task with PID 3
+[PID     1] New task with PID 4
+[PID     1] New task with PID 5
+[PID     1] New task with PID 6
+[PID     1] New task with PID 7
+[PID     1] New task with PID 8
+[PID     1] New task with PID 9
+[PID     9] Running on CPU 0
+[PID     9] Exiting gracefully
+[PID     1] New task with PID 10
+[PID     1] New task with PID 11
+[PID     1] New task with PID 12
+[PID     1] New task with PID 13
+[PID     1] New task with PID 14
+[PID     1] New task with PID 15
+[PID     1] New task with PID 16
+[PID     1] New task with PID 17
+[PID     1] Running on CPU 0
+[PID     1] Exiting gracefully
+[PID     1] Freed task with PID 9
+[PID     1] Freed task with PID 1
+[PID    17] Running on CPU 0
+[PID    17] Exiting gracefully
+[PID    17] Freed task with PID 17
+[PID    16] Running on CPU 0
+[PID    16] Exiting gracefully
+[PID    16] Freed task with PID 16
+[PID    15] Running on CPU 0
+[PID    15] Exiting gracefully
+[PID    15] Freed task with PID 15
+[PID    13] Running on CPU 0
+[PID    13] Exiting gracefully
+[PID    13] Freed task with PID 13
+[PID    14] Running on CPU 0
+[PID    14] Exiting gracefully
+[PID    14] Freed task with PID 14
+[PID    12] Running on CPU 0
+[PID    12] Exiting gracefully
+[PID    12] Freed task with PID 12
+[PID    11] Running on CPU 0
+[PID    11] Exiting gracefully
+[PID    11] Freed task with PID 11
+[PID    10] Running on CPU 0
+[PID    10] Exiting gracefully
+[PID    10] Freed task with PID 10
+[PID     8] Running on CPU 0
+[PID     8] Exiting gracefully
+[PID     8] Freed task with PID 8
+[PID     7] Running on CPU 0
+[PID     7] Exiting gracefully
+[PID     7] Freed task with PID 7
+[PID     6] Running on CPU 0
+[PID     6] Exiting gracefully
+[PID     6] Freed task with PID 6
+[PID     5] Running on CPU 0
+[PID     5] Exiting gracefully
+[PID     5] Freed task with PID 5
+[PID     3] Running on CPU 0
+[PID     3] Exiting gracefully
+[PID     3] Freed task with PID 3
+[PID     4] Running on CPU 0
+[PID     4] Exiting gracefully
+[PID     4] Freed task with PID 4
+[PID     2] Running on CPU 0
+[PID     2] Exiting gracefully
+[PID     2] Freed task with PID 2
+Destroyed the only task - nothing more to do!
+Welcome to the OpenLSD kernel monitor!
+Type 'help' for a list of commands.
+qemu-system-x86_64: terminating on signal 15 from pid 57442 (make)
