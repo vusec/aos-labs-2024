@@ -1,0 +1,243 @@
+include/kernel/mem/buddy.h:
+obj/lib/console.o: lib/console.c include/string.h include/types.h \
+  include/x86-64/types.h include/lib.h include/stdio.h include/stdarg.h \
+  include/error.h include/assert.h include/task.h include/x86-64/idt.h \
+  include/x86-64/memory.h include/x86-64/paging.h include/x86-64/asm.h \
+  include/syscall.h include/paging.h include/list.h
+include/pic.h:
+obj/lib/entry.o: lib/entry.S include/x86-64/memory.h \
+  include/x86-64/paging.h
+obj/user/breakpoint.o: user/breakpoint.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/boot/mmap.o: boot/mmap.S
+include/stdio.h:
+include/boot.h:
+include/kernel/mem/kmem.h:
+include/x86/gdt.h:
+include/stdarg.h:
+include/kernel/sched.h:
+obj/kernel/console.o: kernel/console.c include/x86-64/asm.h \
+  include/x86-64/types.h include/kbdreg.h include/string.h \
+  include/types.h include/assert.h include/stdio.h include/stdarg.h \
+  include/kernel/console.h include/kernel/pic.h
+obj/lib/printfmt.o: lib/printfmt.c include/types.h include/x86-64/types.h \
+  include/stdio.h include/stdarg.h include/string.h include/error.h
+obj/boot/a20.o: boot/a20.S
+obj/user/faultexec.o: user/faultexec.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/user/softint.o: user/softint.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/user/nullhello.o: user/nullhello.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/user/nullwrite.o: user/nullwrite.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/boot/main.o: boot/main.c include/x86/asm.h include/x86/types.h \
+  include/boot.h include/elf.h
+include/kernel/sched/gdt.h:
+obj/kernel/string.o: lib/string.c include/string.h include/types.h \
+  include/x86-64/types.h
+include/x86/types.h:
+include/kernel/mem/ptbl.h:
+include/rbtree.h:
+include/kernel/sched/idt.h:
+obj/user/testbss.o: user/testbss.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/kernel/mem/insert.h:
+include/paging.h:
+obj/kernel/printf.o: kernel/printf.c include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h
+include/syscall.h:
+include/kernel/mem/user.h:
+obj/user/divzero.o: user/divzero.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/x86-64/gdt.h:
+include/x86-64/idt.h:
+include/kernel/mem/slab.h:
+include/kbdreg.h:
+include/task.h:
+obj/lib/string.o: lib/string.c include/string.h include/types.h \
+  include/x86-64/types.h
+include/cpu.h:
+obj/boot/compat.o: boot/compat.S include/x86/asm.h include/x86/gdt.h
+obj/lib/exit.o: lib/exit.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/string.h:
+obj/kernel/pic.o: kernel/pic.c include/types.h include/x86-64/types.h \
+  include/pic.h include/x86-64/asm.h include/x86-64/idt.h
+obj/kernel/readline.o: lib/readline.c include/stdio.h include/stdarg.h \
+  include/error.h
+include/kernel/mem/lookup.h:
+include/kernel/mem/tlb.h:
+obj/user/nullread.o: user/nullread.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/user/kernelread.o: user/kernelread.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/x86-64/paging.h:
+obj/kernel/printfmt.o: lib/printfmt.c include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h
+obj/kernel/monitor.o: kernel/monitor.c include/stdio.h include/stdarg.h \
+  include/string.h include/types.h include/x86-64/types.h \
+  include/assert.h include/x86-64/asm.h include/kernel/console.h \
+  include/kernel/monitor.h include/kernel/mem.h \
+  include/kernel/mem/boot.h include/boot.h include/paging.h \
+  include/list.h include/x86-64/paging.h include/x86-64/memory.h \
+  include/kernel/mem/buddy.h include/kernel/mem/dump.h \
+  include/kernel/mem/init.h include/kernel/mem/insert.h \
+  include/kernel/mem/kmem.h include/kernel/mem/lookup.h \
+  include/kernel/mem/map.h include/elf.h include/kernel/mem/populate.h \
+  include/kernel/mem/protect.h include/kernel/mem/ptbl.h \
+  include/kernel/mem/remove.h include/kernel/mem/slab.h \
+  include/kernel/mem/tlb.h include/kernel/mem/user.h include/task.h \
+  include/x86-64/idt.h include/kernel/mem/walk.h
+obj/lib/stubs.o: lib/stubs.S include/x86-64/idt.h
+include/elf.h:
+obj/user/kernelwrite.o: user/kernelwrite.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/kernel/tests.h:
+include/kernel/mem/boot.h:
+include/kernel/mem/walk.h:
+include/kernel/mem.h:
+include/assert.h:
+include/kernel/monitor.h:
+obj/user/nullexec.o: user/nullexec.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/kernel/console.h:
+obj/boot/boot2.o: boot/boot2.S include/x86/asm.h include/x86/gdt.h
+obj/user/overflowhello.o: user/overflowhello.c include/lib.h \
+  include/types.h include/x86-64/types.h include/stdio.h \
+  include/stdarg.h include/string.h include/error.h include/assert.h \
+  include/task.h include/x86-64/idt.h include/x86-64/memory.h \
+  include/x86-64/paging.h include/x86-64/asm.h include/syscall.h \
+  include/paging.h include/list.h
+obj/lib/printf.o: lib/printf.c include/types.h include/x86-64/types.h \
+  include/stdio.h include/stdarg.h include/lib.h include/string.h \
+  include/error.h include/assert.h include/task.h include/x86-64/idt.h \
+  include/x86-64/memory.h include/x86-64/paging.h include/x86-64/asm.h \
+  include/syscall.h include/paging.h include/list.h
+obj/kernel/list.o: lib/list.c include/list.h include/types.h \
+  include/x86-64/types.h
+obj/user/badsegment.o: user/badsegment.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/kernel/pic.h:
+include/kernel/mem/populate.h:
+include/kernel/mem/remove.h:
+include/x86-64/types.h:
+include/kernel/mem/dump.h:
+include/kernel/sched/task.h:
+include/x86-64/asm.h:
+include/x86/asm.h:
+include/kernel/mem/protect.h:
+include/x86-64/memory.h:
+include/list.h:
+obj/lib/readline.o: lib/readline.c include/stdio.h include/stdarg.h \
+  include/error.h
+include/lib.h:
+obj/user/kernelexec.o: user/kernelexec.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/kernel/mem/init.h:
+include/kernel/sched/syscall.h:
+include/types.h:
+obj/user/faultwrite.o: user/faultwrite.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/lib/panic.o: lib/panic.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/lib/libmain.o: lib/libmain.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+include/error.h:
+obj/kernel/boot.o: kernel/boot.S include/x86-64/asm.h \
+  include/x86-64/gdt.h include/x86-64/memory.h include/x86-64/paging.h
+obj/boot/boot1.o: boot/boot1.S include/boot.h
+obj/lib/syscall.o: lib/syscall.c include/syscall.h include/lib.h \
+  include/types.h include/x86-64/types.h include/stdio.h \
+  include/stdarg.h include/string.h include/error.h include/assert.h \
+  include/task.h include/x86-64/idt.h include/x86-64/memory.h \
+  include/x86-64/paging.h include/x86-64/asm.h include/paging.h \
+  include/list.h
+obj/user/hello.o: user/hello.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/kernel/rbtree.o: lib/rbtree.c include/string.h include/types.h \
+  include/x86-64/types.h include/rbtree.h
+include/kernel/mem/map.h:
+obj/user/aslr.o: user/aslr.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h
+obj/kernel/main.o: kernel/main.c include/kernel/console.h include/types.h \
+  include/x86-64/types.h include/kernel/mem.h include/kernel/mem/boot.h \
+  include/boot.h include/assert.h include/stdio.h include/stdarg.h \
+  include/paging.h include/list.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/x86-64/memory.h \
+  include/kernel/mem/buddy.h include/kernel/mem/dump.h \
+  include/kernel/mem/init.h include/kernel/mem/insert.h \
+  include/kernel/mem/kmem.h include/kernel/mem/lookup.h \
+  include/kernel/mem/map.h include/elf.h include/kernel/mem/populate.h \
+  include/kernel/mem/protect.h include/kernel/mem/ptbl.h \
+  include/kernel/mem/remove.h include/kernel/mem/slab.h \
+  include/kernel/mem/tlb.h include/kernel/mem/user.h include/task.h \
+  include/x86-64/idt.h include/kernel/mem/walk.h \
+  include/kernel/monitor.h include/kernel/sched.h \
+  include/kernel/sched/gdt.h include/kernel/sched/idt.h \
+  include/kernel/sched/syscall.h include/syscall.h \
+  include/kernel/sched/task.h include/cpu.h include/x86-64/gdt.h \
+  include/kernel/tests.h include/string.h
+obj/user/evilhello.o: user/evilhello.c include/lib.h include/types.h \
+  include/x86-64/types.h include/stdio.h include/stdarg.h \
+  include/string.h include/error.h include/assert.h include/task.h \
+  include/x86-64/idt.h include/x86-64/memory.h include/x86-64/paging.h \
+  include/x86-64/asm.h include/syscall.h include/paging.h include/list.h

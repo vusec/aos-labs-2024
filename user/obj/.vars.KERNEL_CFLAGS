@@ -1,0 +1,1 @@
+   -O1 -fno-inline -fno-builtin -I. -MD -fno-omit-frame-pointer -Wall -Wno-format -Wno-unused -Werror -Iinclude -fno-stack-protector -Wno-unused-command-line-argument -DOpenLSD_KERNEL -gdwarf-2 -mcmodel=large -fno-pie -DKERNEL_LMA=0x100000 -DKERNEL_VMA=0xFFFF800000000000 -mno-sse -mno-mmx -mno-sse -mno-avx

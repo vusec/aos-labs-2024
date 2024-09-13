@@ -1,0 +1,1 @@
+   -O1 -fno-inline -fno-builtin -I. -MD -fno-omit-frame-pointer -Wall -Wno-format -Wno-unused -Werror -Iinclude -fno-stack-protector -Wno-unused-command-line-argument -DOpenLSD_USER -gdwarf-2 -fPIC -mno-mmx -mno-sse -mno-avx -w -DUSE_CLANG
