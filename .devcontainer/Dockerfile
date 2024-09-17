@@ -28,7 +28,12 @@ RUN useradd dev -u 1000 -m -s /bin/bash && \
 USER dev
 
 
+# Install GEF for sanity & its dependencies
+RUN sudo apt install -y file && bash -c "$(wget https://gef.blah.cat/sh -O -)"
+
 # Terminal prompt customizations
+COPY custom/gu /usr/local/bin/gu
 COPY custom/.bashrc /home/dev/.bashrc
+RUN sudo chown dev:dev /usr/local/bin/gu
 RUN sudo chown dev:dev /home/dev/.bashrc
 
