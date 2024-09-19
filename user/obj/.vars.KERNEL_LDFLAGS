@@ -1,1 +1,0 @@
--Tkernel/kernel.ld -nostdlib -n --no-pie --defsym=KERNEL_LMA=0x100000 --defsym=KERNEL_VMA=0xFFFF800000000000 -static
